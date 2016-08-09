@@ -1,0 +1,33 @@
+{
+    "name"             : "oddgreg/nine-di",
+    "description"      : "Dependency Injection container classes for Formula Nine",
+    "type"             : "library",
+    "license"          : "MIT",
+    "authors"          : [
+        {
+            "name" : "Greg Truesdell",
+            "email": "odd.greg@gmail.com"
+        }
+    ],
+    "autoload"         : {
+        "classmap": [
+            "tests",
+            "src"
+        ],
+        "psr-4"   : {
+            "Nine\\Application\\Containers\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require"          : {
+        "php"                                : ">=7.0",
+        "container-interop/container-interop": "^1.1",
+        "rdlowrey/auryn"                     : "1.2"
+    },
+    "require-dev"      : {
+        "ocramius/package-versions": "^1.1",
+        "tracy/tracy"              : "2.4.*",
+        "phpunit/phpunit"          : "5.4.*",
+        "psy/psysh"                : "@stable"
+    }
+}
